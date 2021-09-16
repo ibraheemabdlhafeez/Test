@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
+  direction: rtl;
+  outline: none;
+}
+body {
+  background:  #5fa9bb;
+  overflow-x: hidden;
+}
+::placeholder {
+  color: #595856;
+  font-size: .7rem;
+  line-height: 50px;
+}
+.header.img {
+  max-height: 22.390243902439025vw;
+  max-width: 90vw;
+  height: 159.21951219512195px;
+  width: 640px;
+}
+.img {
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  background-position: right;
+  margin: 12px 400px 0;
+  border-radius: 7px;
+  border: 1px solid #9D9D9D;
+}
+.container {
+  background: white;
+  max-width: 90vw;
+  height: auto;
+  width: 640px;
+  margin: 15px 400px 0;
+  border-radius: 7px;
+  border-top: 10px solid rgb(71, 71, 71); 
+  transition: .6s;
+  box-shadow: 0 0 20px rgb(0, 0, 0, .5);
+}
+
+.container input[type="radio"] {
+  display: none;
+}
+.container p {
+  margin: 5px 10px 5px 0;
+  color: #595856;
+}
+.container >p.first{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.container >p.second {
+  font-size: .8rem;
+}
+.container >p.third {
+  margin-bottom: 10px;
+}
+.container nav {
+  display: flex;
+justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.container nav .slider {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  background: rgba(244, 245, 245, 0.5);
+  transition: .5s all ease-in-out;
+  z-index: 0;
+  height: 100%;
+  width: 80px;
+  border-radius: 7px;
+}
+#scenario:checked ~ nav .slider {
+  right: 200px;
+}
+#photography:checked ~ nav .slider {
+  right: 360px;
+}
+#editing:checked ~ nav .slider {
+  right: 520px;
+}
+.container nav label {
+  height: 2rem;
+  width: 80px;
+  text-align: center;
+  line-height: 30px;
+  background: #79B4B7;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  transition: .7s;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+}
+.container nav label:hover {
+  background: rgb(121, 180, 183, .5);
+  color: white;
+}
+.container section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 10px;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.container section .content {
+  display: none;
+}
+#direction:checked ~  section .content-1,
+#scenario:checked ~ section .content-2,
+#photography:checked ~ section .content-3,
+#editing:checked ~ section .content-4 {
+  display: flex;
+}
+section .content-1,
+section .content-2,
+section .content-3,
+section .content-4 {
+ display: flex;
+}
+section .content-1 form,
+section .content-2 form,
+section .content-3 form,
+section .content-4 form {
+  display: flex;
+  flex-direction: column;
+}
+section .content-1 form input[type="text"],
+section .content-1 form input[type="email"] {
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+section .content-1 form input[type="button"] {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  background: #5fa9bb;
+  color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/*2*/
+section .content-2 form input[type="text"],
+section .content-2 form input[type="email"] {
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+section .content-2 form input[type="button"] {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  background: #5fa9bb;
+  color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/*3*/
+section .content-3 form input[type="text"],
+section .content-3 form input[type="email"] {
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+section .content-3 form input[type="button"] {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  background: #5fa9bb;
+  color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/*4*/
+section .content-4 form input[type="text"],
+section .content-4 form input[type="email"] {
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+}
+section .content-4 form input[type="button"] {
+  height: 30px;
+  width: 60px;
+  border-radius: 10px;
+  background: #5fa9bb;
+  color: white;
+  box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
